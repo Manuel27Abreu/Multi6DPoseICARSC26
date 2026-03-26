@@ -1,0 +1,31 @@
+stats_dataset.py
+    cria histogramas da distruibição do dataset por distancias e numero de deteções
+
+Pose6D.py
+    --train 
+        vai treinar
+
+    --run
+        mostra o resultado obtido da predição da rede
+
+    --metrics
+        mostra o valor de metricas
+
+    --annotate
+        utiliza o modelo para fazer anotações
+
+    --class_id
+        quando quero treinar para uma classe especifica
+
+    --option
+        opção a utilizar
+
+    --modalities
+        quais modalidades estão ativas
+
+    --dataset
+        Opcional, escolhe entre dois datasets
+
+python tools/Pose6D.py --train --option 8 --dataset model/full
+
+python tools/Pose6D.py --model ResNet18 --option 8 --modalities 0 --train
